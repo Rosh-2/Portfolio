@@ -1,8 +1,8 @@
-# Ashwin K N - Portfolio
+# Roshen Reji - Portfolio
 
-A modern, responsive personal portfolio website built to showcase my skills in **Flutter** and **React** development. The site features a sleek dark-themed design with smooth animations and interactive elements.
+A modern, responsive personal portfolio website built to showcase my skills in **AI Engineering**, **LLM Systems**, and **Agentic AI**. The site features a sleek dark-themed design with smooth animations and interactive elements.
 
-![Portfolio Screenshot](public/favicon.svg) <!-- You can replace this with a real screenshot -->
+![Portfolio Screenshot](public/favicon.svg)
 
 ## 🚀 Live Demo
 *(Add your live demo link here if deployed, e.g. Vercel/Netlify)*
@@ -13,7 +13,7 @@ A modern, responsive personal portfolio website built to showcase my skills in *
 - **Modern Animations**: Powered by **Framer Motion** for smooth scroll reveals and interactive effects.
 - **Dark Mode Aesthetic**: A professional dark theme using a curated color palette.
 - **Contact Form**: Functional contact form integrated with **Web3Forms**.
-- **Project Showcase**: clean grid layout to display projects with descriptions and tech stacks.
+- **Project Showcase**: Clean grid layout to display projects with descriptions and tech stacks.
 - **Experience Timeline**: A vertical timeline highlighting professional experience.
 
 ## 🛠️ Tech Stack
@@ -30,8 +30,8 @@ Clone the project and verify that you have `Node.js` installed.
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/ashwinkn2004/portfolio-1.git
-    cd portfolio-1
+    git clone https://github.com/Rosh-2/Portfolio.git
+    cd Portfolio
     ```
 
 2.  **Install dependencies**
@@ -53,19 +53,18 @@ src/
 ├── constants/      # Static data (Texts, Project info, Experiences)
 ├── App.jsx         # Main application component
 ├── index.css       # Global styles and Tailwind imports
-└── main.jsx        # Entry point
+├── main.jsx        # Entry point
 ```
 
 ## 📬 Contact
 
-- **LinkedIn**: [Ashwin K N](https://www.linkedin.com/in/ashwin-kn/)
-- **GitHub**: [ashwinkn2004](https://github.com/ashwinkn2004/)
-- **Instagram**: [ashwin.k.n_](https://www.instagram.com/ashwin.k.n_/)
-- **Email**: [contact@ashwinkn.tech](mailto:contact@ashwinkn.tech)
+- **LinkedIn**: [Roshen Reji](https://www.linkedin.com/in/roshenreji/)
+- **GitHub**: [Rosh-2](https://github.com/Rosh-2)
+- **Email**: [rejiroshen2@gmail.com](mailto:rejiroshen2@gmail.com)
 
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
 
 ---
-&copy; 2026 Ashwin K N. All rights reserved.
+&copy; 2026 Roshen Reji. All rights reserved.
