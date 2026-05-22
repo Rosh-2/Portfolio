@@ -18,7 +18,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex shrink-0 items-center">
           <a href="/" className="cursor-pointer text-2xl font-bold text-white">
-            Ashwin<span className="text-gray-500">.</span>
+            Roshen<span className="text-gray-500">.</span>
           </a>
         </div>
 

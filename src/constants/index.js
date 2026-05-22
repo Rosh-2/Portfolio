@@ -1,50 +1,43 @@
 import project1 from "../assets/projects/project-1.webp";
 import project2 from "../assets/projects/project-2.webp";
-import project3 from "../assets/projects/project-3.webp";
 import project4 from "../assets/projects/project-4.webp";
 
-export const HERO_CONTENT = `I am a front-end focused developer with a strong interest in building clean, responsive, and user-friendly applications. I enjoy creating intuitive interfaces using modern web and mobile technologies, with hands-on experience in React for web and Flutter for cross-platform mobile development.`;
+export const HERO_CONTENT = `I am an AI Engineer focused on building production ready LLM systems, RAG pipelines, and agentic AI workflows. I have shipped end to end AI systems across healthcare, analytics, and research domains, from model selection and prompt engineering to cloud deployment and APIs. I do not just experiment with AI, I build systems that actually run in production.`;
 
-export const ABOUT_TEXT = `I am a fresher and a front-end developer who enjoys designing and developing visually appealing and functional user interfaces. I have worked extensively with React for web development and have built complete end-to-end mobile applications using Flutter, including UI, state management, local storage, and backend integrations. While my primary strength lies in front-end development, I am actively learning backend concepts and continuously improving my overall development skills through projects and experimentation. I enjoy collaborating with teams, solving problems, and exploring new technologies to grow as a developer.`;
-
+export const ABOUT_TEXT = `I am a dedicated AI Engineer passionate about designing and developing intelligent agentic systems, robust RAG pipelines, and scalable APIs. I have hands-on experience working with deep learning frameworks like PyTorch and TensorFlow, as well as AI orchestration tools like LangChain and LangGraph. I enjoy optimizing model performance, structuring retrieval pipelines, and building clean, responsive interfaces using React. I focus on bridging the gap between cutting-edge AI models and production-ready applications.`;
 
 export const EXPERIENCES = [
   {
-    year: "June 2025 - August 2025",
-    role: "Flutter Developer Intern",
-    company: "Nexotech Solutions",
-    description: `Contributed to the development of cross-platform mobile applications using Flutter. Worked closely with the team to design responsive UI components, implement application logic, and integrate backend APIs. Assisted in debugging, performance optimization, and delivering features according to project timelines.`,
-    technologies: ["Flutter", "Dart", "Hive", "Firebase", "Git", "Riverpod"],
+    year: "March 2025 - June 2025",
+    role: "AI Developer",
+    company: "Freelancer",
+    description: `Built and deployed production grade AI systems as a freelance AI Developer, including a deep learning crop disease classification API using ResNet-50 and TensorFlow achieving 87%+ accuracy across 10+ categories. Designed and deployed scalable inference APIs on Google Cloud Platform using Python and Flask, with structured JSON outputs and automated prediction workflows. Integrated Firebase for real time cloud storage and monitoring of model predictions across distributed deployments.`,
+    technologies: ["Python", "TensorFlow", "ResNet-50", "Flask", "GCP", "Firebase", "Docker", "Git"],
   },
 ];
-
 
 export const PROJECTS = [
   {
-    title: "WildEye",
+    title: "LucidCare",
     image: project4,
-    description:
-      "A real-time wild animal detection and alert system using YOLO and Flutter-based mobile notifications.",
-    technologies: ["Flutter", "Dart", "YOLOv11", "Firebase"],
+    description: "An end-to-end multimodal AI system for chest X-ray interpretation using YOLOv8 for lesion localization, DenseNet for disease classification, and LLM reasoning to generate structured diagnostic outputs. Implemented Explainable AI techniques for interpretability and built production grade Flask APIs with OCR driven report extraction. Published at IEEE conference.",
+    technologies: ["Python", "YOLOv8", "DenseNet", "LLM", "Flask", "OCR", "Supabase"],
   },
   {
-    title: "Ethraya - Ongoing Project",
+    title: "Autonomous AI Analytics Platform",
     image: project1,
-    description:
-      "A Flutter-based app to easily split and track shared expenses among friends.",
-    technologies: ["Flutter", "Dart", "Hive", "Firebase", "Riverpod"],
+    description: "A multi-agent agentic AI platform built with LangGraph, featuring five specialized agents including Planner, Analytics, ML, Reflection, and Report agents. Engineered stateful orchestration with conditional routing, retry logic, and reflection based quality evaluation for autonomous end-to-end dataset analysis and executive report generation.",
+technologies: ["Python", "LangGraph", "FastAPI", "Groq API", "XGBoost", "Docker", "React.js"],
   },
   {
-    title: "AshGPT",
+    title: "AstroChat",
     image: project2,
-    description:
-      "An AI chat application inspired by ChatGPT and Gemini using modern web technologies.",
-    technologies: ["React", "JavaScript", "REST APIs"],
+    description: "A RAG powered astronomy research assistant using a hybrid retrieval pipeline combining BM25 and FAISS vector search with Meta LLaMA APIs. Designed chunking strategy, embedding model selection, and retrieval evaluation workflow to improve semantic relevance and context aware response quality for domain specific queries.",
+technologies: ["Python", "LangChain", "FAISS", "BM25", "Meta-LLaMA", "Flask", "AWS"],
   },
 ];
 
-
 export const CONTACT = {
-  phoneNo: "+91 8606239734",
-  email: "contact@ashwinkn.tech",
+  phoneNo: "+91 8848478876",
+  email: "rejiroshen2@gmail.com",
 };

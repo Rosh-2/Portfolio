@@ -1,22 +1,16 @@
 import React from "react";
 import {
-    RiReactjsLine,
-    RiFlutterFill,
-    RiHtml5Line,
-    RiCss3Line,
-    RiGitBranchLine,
-} from "react-icons/ri";
-import {
     SiPython,
-    SiC,
-    SiDart,
-    SiFirebase,
-    SiMysql,
-    SiFigma,
-    SiAndroidstudio,
+    SiPytorch,
+    SiTensorflow,
+    SiLangchain,
+    SiHuggingface,
+    SiFastapi,
+    SiDocker,
 } from "react-icons/si";
-import { FaJava } from "react-icons/fa";
-import { VscVscode } from "react-icons/vsc";
+import { PiGraph } from "react-icons/pi";
+import { FaAws } from "react-icons/fa";
+import { RiGitBranchLine } from "react-icons/ri";
 import { motion } from "framer-motion";
 
 const iconVariants = (duration) => ({
@@ -31,6 +25,22 @@ const iconVariants = (duration) => ({
         },
     },
 });
+
+const coreTech = [
+    { name: "Python", Icon: SiPython, color: "text-[#3776AB]", duration: 2.5 },
+    { name: "PyTorch", Icon: SiPytorch, color: "text-[#EE4C2C]", duration: 3 },
+    { name: "TensorFlow", Icon: SiTensorflow, color: "text-[#FF6F00]", duration: 5 },
+    { name: "LangChain", Icon: SiLangchain, color: "text-[#13B47A]", duration: 2 },
+    { name: "LangGraph", Icon: PiGraph, color: "text-[#FF6B6B]", duration: 6 },
+    { name: "Hugging Face", Icon: SiHuggingface, color: "text-[#FFD21E]", duration: 4 },
+];
+
+const devTools = [
+    { name: "FastAPI", Icon: SiFastapi, color: "text-[#009688]", duration: 2.5 },
+    { name: "Docker", Icon: SiDocker, color: "text-[#2496ED]", duration: 3 },
+    { name: "Git", Icon: RiGitBranchLine, color: "text-[#F05032]", duration: 5 },
+    { name: "AWS", Icon: FaAws, color: "text-[#FF9900]", duration: 2 },
+];
 
 const Technologies = () => {
     return (
@@ -54,45 +64,26 @@ const Technologies = () => {
                 </h3>
 
                 <div className="flex flex-wrap justify-center gap-10 text-5xl">
-                    <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate">
-                        <SiPython className="text-[#3776AB] text-7xl" />
-                    </motion.div>
-
-                    <motion.div variants={iconVariants(3)} initial="initial" animate="animate">
-                        <SiC className="text-[#00599C] text-7xl" />
-                    </motion.div>
-
-                    <motion.div variants={iconVariants(5)} initial="initial" animate="animate">
-                        <FaJava className="text-[#E76F00] text-7xl" />
-                    </motion.div>
-
-                    <motion.div variants={iconVariants(2)} initial="initial" animate="animate">
-                        <RiFlutterFill className="text-[#02569B] text-7xl" />
-                    </motion.div>
-
-                    <motion.div variants={iconVariants(6)} initial="initial" animate="animate">
-                        <SiDart className="text-[#0175C2] text-7xl" />
-                    </motion.div>
-
-                    <motion.div variants={iconVariants(4)} initial="initial" animate="animate">
-                        <SiFirebase className="text-[#FFCA28] text-7xl" />
-                    </motion.div>
-
-                    <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate">
-                        <SiMysql className="text-[#00758F] text-7xl" />
-                    </motion.div>
-
-                    <motion.div variants={iconVariants(3)} initial="initial" animate="animate">
-                        <RiReactjsLine className="text-[#61DAFB] text-7xl" />
-                    </motion.div>
-
-                    <motion.div variants={iconVariants(5)} initial="initial" animate="animate">
-                        <RiHtml5Line className="text-[#E34F26] text-7xl" />
-                    </motion.div>
-
-                    <motion.div variants={iconVariants(2)} initial="initial" animate="animate">
-                        <RiCss3Line className="text-[#1572B6] text-7xl" />
-                    </motion.div>
+                    {coreTech.map(({ name, Icon, color, duration }) => (
+                        <motion.div
+                            key={name}
+                            variants={iconVariants(duration)}
+                            initial="initial"
+                            animate="animate"
+                            className="p-2"
+                        >
+                            <motion.div
+                                whileHover={{ scale: 1.25, rotate: 2 }}
+                                className="relative group cursor-pointer"
+                            >
+                                <Icon className={`${color} text-7xl`} />
+                                {/* Tooltip */}
+                                <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 bg-stone-900 border border-stone-800 px-3 py-1 rounded-md text-xs text-stone-200 whitespace-nowrap pointer-events-none shadow-2xl z-20 font-medium">
+                                    {name}
+                                </div>
+                            </motion.div>
+                        </motion.div>
+                    ))}
                 </div>
             </motion.div>
 
@@ -106,25 +97,29 @@ const Technologies = () => {
                 </h3>
 
                 <div className="flex flex-wrap justify-center gap-10 text-5xl">
-                    <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate">
-                        <RiGitBranchLine className="text-[#F05032] text-7xl" />
-                    </motion.div>
-
-                    <motion.div variants={iconVariants(3)} initial="initial" animate="animate">
-                        <VscVscode className="text-[#007ACC] text-7xl" />
-                    </motion.div>
-
-                    <motion.div variants={iconVariants(5)} initial="initial" animate="animate">
-                        <SiAndroidstudio className="text-[#3DDC84] text-7xl" />
-                    </motion.div>
-
-                    <motion.div variants={iconVariants(2)} initial="initial" animate="animate">
-                        <SiFigma className="text-[#A259FF] text-7xl" />
-                    </motion.div>
+                    {devTools.map(({ name, Icon, color, duration }) => (
+                        <motion.div
+                            key={name}
+                            variants={iconVariants(duration)}
+                            initial="initial"
+                            animate="animate"
+                            className="p-2"
+                        >
+                            <motion.div
+                                whileHover={{ scale: 1.25, rotate: 2 }}
+                                className="relative group cursor-pointer"
+                            >
+                                <Icon className={`${color} text-7xl`} />
+                                {/* Tooltip */}
+                                <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 bg-stone-900 border border-stone-800 px-3 py-1 rounded-md text-xs text-stone-200 whitespace-nowrap pointer-events-none shadow-2xl z-20 font-medium">
+                                    {name}
+                                </div>
+                            </motion.div>
+                        </motion.div>
+                    ))}
                 </div>
             </motion.div>
         </section>
-
     );
 };
 
